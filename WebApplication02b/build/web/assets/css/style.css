@@ -1,0 +1,124 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 16, 2025, 8:39:28 AM
+    Author     : khoac
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 40px 0;
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 36px 44px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    max-width: 90%;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 24px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+}
+
+form label {
+    display: block;
+    margin-top: 14px;
+    font-weight: 600;
+    color: #555555;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 2px solid #dde5ed;
+    border-radius: 8px;
+    background-color: #f9fbfc;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff8a00;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.3s ease;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #ffffff;
+}
+
+input[type="reset"] {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+input[type="button"] {
+    background-color: #00c2ff;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+input[type="reset"]:hover {
+    background-color: #b3b3b3;
+}
+
+input[type="button"]:hover {
+    background-color: #00a8e1;
+}
