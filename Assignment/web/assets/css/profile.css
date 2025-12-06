@@ -1,0 +1,296 @@
+    /* Import Google Font - Inter */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6; /* Light gray background */
+        color: #374151; /* Dark gray text */
+        line-height: 1.6;
+    }
+
+    /* Main Profile Layout Container */
+    .main-profile-layout {
+        display: flex;
+        min-height: 100vh; /* Ensure it takes full viewport height */
+        padding: 1.5rem; /* Overall padding around the layout */
+        gap: 1.5rem; /* Space between sidebar and content */
+        box-sizing: border-box; /* Include padding in element's total width and height */
+    }
+
+    /* Left Column (Profile Information) */
+    .left-column {
+        flex-grow: 1; /* Allows it to take available space */
+        background-color: #ffffff;
+        border-radius: 0.75rem; /* Rounded corners */
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .left-column hr {
+        border: none;
+        border-top: 1px solid #e5e7eb; /* Light gray horizontal rule */
+        margin: 1.5rem 0;
+    }
+
+    /* Profile Section Styling (Account Info, Address Info) */
+    .profile-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: #f9fafb; /* Lighter background for sections */
+        border-radius: 0.75rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .section-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #4f46e5; /* Indigo underline */
+        padding-bottom: 0.75rem;
+    }
+
+    .profile-section form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Space between form elements */
+    }
+
+    .profile-section label {
+        font-weight: 500;
+        color: #4b5563;
+        margin-bottom: 0.25rem;
+        display: block; /* Ensures label is on its own line */
+    }
+
+    .profile-section input[type="email"],
+    .profile-section input[type="text"],
+    .profile-section select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #d1d5db; /* Light gray border */
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        color: #4b5563;
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .profile-section button {
+        background-color: #4f46e5; /* Indigo button */
+        color: #ffffff;
+        padding: 0.85rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem; /* Space above button */
+    }
+
+    .profile-section button:hover {
+        background-color: #4338ca; /* Darker indigo on hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .profile-section button:active {
+        background-color: #3730a3; /* Even darker on active/click */
+        transform: translateY(0);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-section p {
+        color: #6b7280;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Back to Home Button */
+    .back-to-home-form {
+        margin-top: 1.5rem; /* Space above the form */
+        text-align: left; /* Align button to the left */
+    }
+
+    .back-to-home-form button {
+        background-color: #10b981; /* Emerald green button */
+        color: #ffffff;
+        padding: 0.75rem 1.25rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: inline-block; /* Allow it to be inline with text, but still apply padding */
+        width: auto; /* Override full width from general button style if needed */
+    }
+
+    .back-to-home-form button:hover {
+        background-color: #059669; /* Darker green on hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Right Column (Admin Actions) */
+    .right-column {
+        flex-shrink: 0; /* Prevent it from shrinking */
+        width: 300px; /* Fixed width for the admin column */
+        background-color: #ffffff;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+    }
+
+    .right-column h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        border-bottom: 2px solid #ef4444; /* Red underline for admin section */
+        padding-bottom: 0.75rem;
+        width: 100%; /* Ensure underline spans full width */
+    }
+
+    .right-column form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%; /* Ensure form takes full width of column */
+    }
+
+    .right-column button {
+        background-color: #ef4444; /* Red button for admin actions */
+        color: #ffffff;
+        padding: 0.85rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Ensure buttons take full width */
+    }
+
+    .right-column button:hover {
+        background-color: #dc2626; /* Darker red on hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .right-column button:active {
+        background-color: #b91c1c; /* Even darker on active/click */
+        transform: translateY(0);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 1024px) {
+        .main-profile-layout {
+            flex-direction: column; /* Stack columns on smaller screens */
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .left-column,
+        .right-column {
+            width: auto; /* Allow columns to take full width */
+            margin: 0; /* Remove side margins */
+            padding: 1.5rem;
+        }
+
+        .right-column {
+            order: -1; /* Place admin column above profile details on small screens */
+            margin-bottom: 1rem;
+        }
+
+        .left-column h1 {
+            font-size: 2rem;
+        }
+
+        .section-header {
+            font-size: 1.35rem;
+        }
+
+        .right-column h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main-profile-layout {
+            padding: 0.75rem;
+        }
+
+        .left-column,
+        .right-column {
+            padding: 1rem;
+        }
+
+        .left-column h1 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-section input,
+        .profile-section select,
+        .profile-section button {
+            padding: 0.6rem 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .right-column h2 {
+            font-size: 1.35rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .main-profile-layout {
+            padding: 0.5rem;
+        }
+
+        .left-column,
+        .right-column {
+            padding: 0.75rem;
+        }
+
+        .left-column h1 {
+            font-size: 1.5rem;
+        }
+
+        .section-header {
+            font-size: 1.1rem;
+        }
+
+        .right-column h2 {
+            font-size: 1.2rem;
+        }
+    }
